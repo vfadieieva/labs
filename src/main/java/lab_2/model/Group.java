@@ -1,15 +1,11 @@
 package lab_2.model;
-
 import java.util.List;
 import java.util.Objects;
-
 public class Group extends EducationalUnit {
     private List<Human> students;
-
     public List<Human> getStudents() {
         return students;
     }
-
     public void setStudents(List<Human> students) {
         this.students = students;
     }
@@ -19,8 +15,6 @@ public class Group extends EducationalUnit {
                 ", Group leader`s name is " + manager +
                 ", Students names are " + students;
     }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -28,7 +22,6 @@ public class Group extends EducationalUnit {
         Group group = (Group) o;
         return students.equals(group.students);
     }
-
     @Override
     public int hashCode() {
 

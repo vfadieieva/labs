@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Random;
 
 public class UniversityCreator {
-    public static final int MIN_NUMBER_UNIVERSITY_SIZE = 15;
-    public static final int MAX_NUMBER_UNIVERSITY_SIZE = 30;
+    public static final int MIN_NUMBER_UNIVERSITY_SIZE = 10;
+    public static final int MAX_NUMBER_UNIVERSITY_SIZE = 20;
 
     public University createUniversityRandomly() {
         Random random = new Random();

@@ -1,5 +1,4 @@
 package lab_2.model;
-
 import java.util.List;
 import java.util.Objects;
 

@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Random;
 
 public class FacultyCreator {
-    public static final int MIN_NUMBER_FACULTY_SIZE = 1;
-    public static final int MAX_NUMBER_FACULTY_SIZE = 5;
+    public static final int MIN_NUMBER_FACULTY_SIZE = 5;
+    public static final int MAX_NUMBER_FACULTY_SIZE = 10;
     public static final List<String> DICTIONARY_NAMES_OF_FACULTIES = Arrays.asList("Faculty of Information Technologies","Faculty of Finances and Economics","Faculty of Law");
 
     public Faculty createFacultyRandomly() {
