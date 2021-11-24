@@ -23,10 +23,10 @@ void createChairRandomly() {
             groupSet.add(groups.get(i));
         }
 
-        if (groups.size() != groupSet.size()){
+        if (groups.size() != groupSet.size()) {
             res++;
         }
     }
-    System.out.println("The percentage of content in one chair of the same groups is "+ res / count * 100 + "%");
+    System.out.println("The percentage of content in one chair of the same groups is " + res / count * 100 + "%");
     }
 }
