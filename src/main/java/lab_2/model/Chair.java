@@ -1,6 +1,8 @@
 package lab_2.model;
+
 import java.util.List;
 import java.util.Objects;
+
 public class Chair extends EducationalUnit {
     private List<Group> groups;
     public List<Group> getGroups()
@@ -20,7 +22,9 @@ public class Chair extends EducationalUnit {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Chair chair = (Chair) o;
         return Objects.equals(groups, chair.groups);
     }

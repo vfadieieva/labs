@@ -19,7 +19,7 @@ public class ChairCreator {
         HumanCreator humanCreator = new HumanCreator();
         int numberOfGroups = random.nextInt(MIN_NUMBER_CHAIR_SIZE) + MAX_NUMBER_CHAIR_SIZE - MIN_NUMBER_CHAIR_SIZE;
         Chair chair = new Chair();
-        chair.setTitle(DICTIONARY_NAMES_OF_CHAIRS.get(random.nextInt(DICTIONARY_NAMES_OF_CHAIRS.size()-1)));
+        chair.setTitle(DICTIONARY_NAMES_OF_CHAIRS.get(random.nextInt(DICTIONARY_NAMES_OF_CHAIRS.size() - 1)));
         chair.setManager(humanCreator.createHumanRandomly());
         List<Group> groups = new ArrayList<>();
 
@@ -30,3 +30,5 @@ public class ChairCreator {
         return chair;
     }
 }
+
+

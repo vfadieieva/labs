@@ -1,12 +1,18 @@
 package lab_2.model;
+
 import java.util.List;
 import java.util.Objects;
+
 public class Group extends EducationalUnit {
     private List<Human> students;
+
     public List<Human> getStudents() {
+
         return students;
     }
+
     public void setStudents(List<Human> students) {
+
         this.students = students;
     }
     @Override

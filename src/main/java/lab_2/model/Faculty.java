@@ -1,4 +1,5 @@
 package lab_2.model;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -6,10 +7,12 @@ public class Faculty extends EducationalUnit {
     private List<Chair> chairs;
 
     public List<Chair> getChairs() {
+
         return chairs;
     }
 
-    public void setChairs (List<Chair> chairs) {
+    public void setChairs(List<Chair> chairs) {
+
         this.chairs = chairs;
     }
 
@@ -23,6 +26,7 @@ public class Faculty extends EducationalUnit {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(chairs);
     }
 
