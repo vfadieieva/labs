@@ -6,17 +6,17 @@ import lab_2.model.University;
 import java.io.*;
 
 public class UniversityJSONReaderWriter {
-        public void writeToFile(University university, String path){
-            try {
-                Gson gson = new Gson();
-                String univerText = gson.toJson(university);
-                FileWriter fileWriterAnother = new FileWriter(path);
-                fileWriterAnother.write(univerText);
-                fileWriterAnother.flush();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    public void writeToFile(University university, String path) {
+        try {
+            Gson gson = new Gson();
+            String univerText = gson.toJson(university);
+            FileWriter fileWriterAnother = new FileWriter(path);
+            fileWriterAnother.write(univerText);
+            fileWriterAnother.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+    }
         public University readFromFile(String path){
             String uniText = "";
             try {
